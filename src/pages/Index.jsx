@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -32,6 +33,7 @@ const Index = () => {
               <CardContent>
                 <p>Location: New York, NY</p>
                 <p className="mt-2">Brief description of the job listing...</p>
+                <Link to={`/apply/${job}`}><Button>Apply</Button></Link>
               </CardContent>
             </Card>
           ))}
